@@ -1,27 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import { Routes, Route} from 'react-router-dom'
-/* import './App.css' */
-
-import Container from './components/Container'
-import Navbar from './components/Navbar'
-import Mainbody from './components/Mainbody'
-
-//Pages
-import Registro from './pages/registro/Registro'
-import Rutas from './router/rutas'
+/*Paginas*/
+import Rutas from "./Routes/Rutas"
 
 function App() {
 
   return (
     <>
-    <Container>
-
-
-        <Rutas/>
-        
-      <Mainbody/>
-    </Container>
+      <Rutas/>
     </>
   )
 }

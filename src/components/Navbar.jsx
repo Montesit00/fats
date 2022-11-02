@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom"
+
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
     return(
@@ -8,18 +10,17 @@ const Navbar = () => {
                 <div className="log">
                     <img src="" alt=""></img>
                 </div>
-
+                <div className="button-buscar">
+                                <input type="text" placeholder="Buscar" required/>
+                                    <div className="btn-buscar">
+                                        <i className="fas fa-search icon"></i>
+                                    </div>
+                            </div>
                 <div className="menu">
                     <nav>
                         <ul>
                             <li>
                                 <a href="#">Categorias</a>
-                            </li>
-                            <li>
-                                <div className="buscador_box">
-                                    <input type="text" placeholder="Buscador Facil"/>
-                                    <i class="bi bi-search"></i>
-                                </div>
                             </li>
                             <li>
                                 <a href="#">Undefined</a>
@@ -35,8 +36,10 @@ const Navbar = () => {
                 </div>
                 
                 <div className="headerRegister">
-                    <input type="button" value="Iniciar Sesion" className="btnHeaderLogin"/>
-                     <Link  type="input" className="btnHeaderRegister" value="Registrarse" to="/Registro">Registro</Link>
+
+                    <Link type="button" value="Iniciar Sesion" className="btnHeaderLogin" to="/IniciarSesion">IniciarSesión</Link>
+                    <Link type="button" value="Registrarse" className="btnHeaderRegister" to="/Registro">Regístrate</Link>
+
                 </div>
             </div>
        </header>

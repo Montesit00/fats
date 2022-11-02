@@ -1,11 +1,13 @@
 import React from "react";
-import Navbar from "./Navbar";
 
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 const Mainbody = () => {
     return(
         <>
             <Navbar/>
+
         <main>
             <div className="cover">
                 <div className="textoInformacion">
@@ -35,6 +37,9 @@ const Mainbody = () => {
                 </div>
             </div>
         </main>
+
+    <Footer/>
+
     </>
     )
 }
