@@ -6,41 +6,13 @@ import Mainbody from "../Components/Mainbody"
 
 const IniciarSesion = () => {
     
-    const [password, setPassword] = useState('');
-    const [usuario, setUsuario] = useState('');
-        console.log('hola123')
-        const RegistrarNuevoUser = async () => {
-
-            const url = "http://localhost:5000/registro"
-            let myHeaders = new Headers();
     
-            myHeaders.append("Content-Type", "application/json")
-            
-            const raw = JSON.stringify({
-                password: password,
-                usuario: username
-            })
-    
-            const options = {
-                method: 'POST',
-                headers: myHeaders,
-                body: raw,
-                redirect: 'follow'
-            }
-            
-            const postData = await fetch(url, options)
-            const res = postData.json()
-            console.log(res) 
-            console.log('hola123')
-        }
-    
-
     return(
         <>
             <Navbar/>
             <div className="row vh-100">
                     <div className="col-md-5 mx-auto align-self-center col-lg-3 col-sm-6 col-sx-12">
-                        <form action="" className="border p-4 rounded bg-white" onSubmit={RegistrarNuevoUser}>
+                        <form className="border p-4 rounded bg-white" onSubmit={guardarDatos}>
                             <div className="container">
                                 <h3>Registrese y aprenda!</h3>
                                 <div className="inputContainer">
@@ -56,6 +28,17 @@ const IniciarSesion = () => {
                                 </div>
                                 <div className="inputContainer">
                                     <input 
+                                        type="text" 
+                                        name="email" 
+                                        autoComplete="off" 
+                                        placeholder="Email"  
+                                        onChange={(e) => {setEmail(e.target.value)}}
+                                        value={email}
+                                        autoFocus={true}
+                                    />
+                                </div>
+                                <div className="inputContainer">
+                                    <input 
                                         type="password" 
                                         name="password" 
                                         autoComplete="off" 
@@ -64,7 +47,7 @@ const IniciarSesion = () => {
                                         value={password}
                                     />
                                 </div>
-                                <button type="button" className='btn btn-sm btn-primary mt-4'>Regístro</button>
+                                <button type="submit" className='btn btn-sm btn-primary mt-4'>Regístro</button>
                             </div>
                         </form>
                     </div>
