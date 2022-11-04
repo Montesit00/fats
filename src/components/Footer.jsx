@@ -2,50 +2,69 @@ import React from "react";
 
 const Footer = () =>{
    return (
-    <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-            <div class="col mb-3">
-                <p class="text-muted">© 2022</p>
-            </div>
+        <footer>
+            <div className="containter-footer-all">
 
-            <div class="col mb-3">
+                <div className="container-body">
+                    <div className="colum1">
+                        <h1>Mas informacion sobre el proyecto</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, 
+                            adipisicing elit. Dolorem perferendis pariatur dolores, modi ducimus amet?</p>
+                    </div>
+                    <div className="colum2">
+                        <h1>Redes Sociales</h1>
+                            <div className="row">
+                                <i className="fa-brands fa-facebook"></i>
+                                <label>Siguenos en Facebook</label>
+                            </div>
+                            <div className="row">
+                                <i className="fa-brands fa-instagram"></i>
+                                <label>Siguenos en Instagram</label>
+                            </div>
+                    </div>
+                    <div className="colum3">
+                        <h1>Información Contactos</h1>
+                            <div className="row2">
+                                <img src=""></img>
+                                <label> 
+                                    Plaza San Martin,
+                                    Republica Argentina
+                                    Formosa Capital
+                                </label>
+                            </div>
+                            <div className="row2">
+                                <img src=""></img>
+                                <label> 
+                                    +543704959493                               
+                                </label>
+                            </div>
+                            <div className="row2">
+                                <img src=""></img>
+                                <label> 
+                                    CursosYaFormosa@gmail.com
+                                </label>
+                            </div>
+                    </div>
+                </div>
 
-            </div>
+                <div className="container-footer">
+                    <div className="footer">
+                        <div className="copyright">
+                            2022 Todos los derechos reservados para <a>CursosYa</a>
+                        </div>
 
-            <div class="col mb-3">
-                    <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
+                        <div className="informacion">
+                            <a href="#">Información Compañia</a>
+                                | 
+                            <a href="#">Privacion y Política </a> 
+                                | 
+                            <a href="#">Terminos y Condiciones</a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="col mb-3">
-                    <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col mb-3">
-                    <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
             </div>
         </footer>
-    </div>
     )
 }
 

@@ -1,12 +1,46 @@
 import { useState } from "react";
 import React from "react";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Mainbody from "../Components/Mainbody"
 
 const IniciarSesion = () => {
     
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    }
     
+    const [usuarios,setUsuarios] = useState({
+        email:"",
+        password:""
+    })
+
+    const { email, password } = usuarios;
+
+    const valorInput = ({ target }) => {
+        setUsuarios({
+            ...usuarios,
+            [target.name]:target.value
+        })
+    };
+
+    const guardarDatos = async (e) => {
+        e.preventDefault();
+        
+            options.body = JSON.stringify({ email, password }) 
+            const resp = await fetch('http://localhost:5000/login', options)
+
+            if(!resp.ok) alert('Hubo un error en las casillas verifique y intenlo de nuevo');
+
+            const data = await resp.json()
+            console.log(data);
+            
+            window.location.href="/"
+    };
+
     return(
         <>
             <Navbar/>
@@ -18,21 +52,10 @@ const IniciarSesion = () => {
                                 <div className="inputContainer">
                                     <input 
                                         type="text" 
-                                        name="usuario" 
-                                        autoComplete="off" 
-                                        placeholder="Nombre Completo"  
-                                        onChange={(e) => {setUsuario(e.target.value)}}
-                                        value={usuario}
-                                        autoFocus={true}
-                                    />
-                                </div>
-                                <div className="inputContainer">
-                                    <input 
-                                        type="text" 
                                         name="email" 
                                         autoComplete="off" 
                                         placeholder="Email"  
-                                        onChange={(e) => {setEmail(e.target.value)}}
+                                        onChange= {valorInput}
                                         value={email}
                                         autoFocus={true}
                                     />
@@ -43,7 +66,7 @@ const IniciarSesion = () => {
                                         name="password" 
                                         autoComplete="off" 
                                         placeholder="Contraseña" 
-                                        onChange={(e) => {setPassword(e.target.value)}}
+                                        onChange={valorInput}
                                         value={password}
                                     />
                                 </div>
