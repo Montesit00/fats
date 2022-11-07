@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import Footer from "../components/Footer";
-import Navbar from "../Components/Navbar"
+import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar"
 
 const Registro = () => {
 
@@ -46,10 +46,7 @@ const Registro = () => {
             const data = await resp.json()
             console.log(data);
 
-            //en caso que exista el usuario lo manda al home
-            //<Route path='/' render={()=> isUser ? <Mainbody/> : <Redirect to="/login"/>}/>
-            //En caso que no exista usuario lo mando al login
-            //<Route path='/login' render={()=> !isUser ? <IniciarSesion/> : <Redirect to="/home"/>
+            window.location.href="/"
     }
 
     return(

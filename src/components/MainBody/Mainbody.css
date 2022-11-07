@@ -1,0 +1,120 @@
+/*Portada, cover*/
+
+main{
+    max-width: 1200px;
+    height: calc(100vh+800px);
+    padding: 40px;
+    margin: auto;
+}
+
+.cover{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.textoInformacion{
+    width: 50%;
+}
+
+.textoInformacion h1{
+    font-size: 50px;
+}
+
+.textoInformacion p{
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.btnCover{
+    display: flex;
+    margin-top: 40px;
+}
+
+.btnReadMoreCover{
+    padding: 14px 40px;
+    border: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 300ms;
+}
+
+.btnReadMoreCover:hover{
+    background: #8c8c8c;
+}
+
+.mediaCover{
+    width: 50%;
+}
+
+.mediaCover video{
+    width: 100%;
+    margin-top: -40px;
+}
+
+/*Banner*/
+
+.containerBanner{
+    margin-top: 80px;
+}
+.banner{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background: #121214;
+    position: relative;
+}
+.bannerIconHeart{
+    width: 35%;
+    height: 100%;
+}
+
+#iconHeart{
+width: 400px;
+margin-top: -20px;
+position: relative;
+filter:drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+}
+
+.bannerText{
+    width: 60%;
+    position: relative;
+    padding: 40px;
+}
+
+.bannerText h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.bannerText a{
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 300ms;
+}
+
+.bannerText a:hover{
+    color: #8c8c8c;
+}
+
+.bannerIconFire{
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    overflow: hidden;
+}
+
+#iconFire{
+    width: 300px;
+    position: relative;
+    margin-top: -100px;
+    opacity: 0.6;
+}

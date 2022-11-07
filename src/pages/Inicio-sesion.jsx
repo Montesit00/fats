@@ -1,8 +1,8 @@
 import { useState } from "react";
 import React from "react";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
-import Mainbody from "../Components/Mainbody"
+import Mainbody from "../Components/MainBody/Mainbody"
 
 const IniciarSesion = () => {
     

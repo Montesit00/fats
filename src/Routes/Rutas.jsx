@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route }  from "react-router-dom";
 
-import Mainbody from '../components/Mainbody';
+import Mainbody from '../components/MainBody/Mainbody';
 import Registro from "../pages/Registro";
 import InicioSesion from '../pages/Inicio-sesion';
 
