@@ -1,6 +1,6 @@
 import React from "react";
 
-const postUser = async () => {
+const connectBack = async () => {
         try {
             const resp = await fetch('http://localhost:5000/registro')
             const resjson = await resp.json()
@@ -12,4 +12,4 @@ const postUser = async () => {
         }
     }
 
-export default postUser
+export default connectBack

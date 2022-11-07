@@ -48,7 +48,7 @@ const IniciarSesion = () => {
                     <div className="col-md-5 mx-auto align-self-center col-lg-3 col-sm-6 col-sx-12">
                         <form className="border p-4 rounded bg-white" onSubmit={guardarDatos}>
                             <div className="container">
-                                <h3>Registrese y aprenda!</h3>
+                                <h3>Inicia Sesion</h3>
                                 <div className="inputContainer">
                                     <input 
                                         type="text" 
