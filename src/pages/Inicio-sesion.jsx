@@ -1,8 +1,7 @@
 import { useState } from "react";
-import React from "react";
+
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
-import Mainbody from "../Components/MainBody/Mainbody"
 
 const IniciarSesion = () => {
     
@@ -38,7 +37,7 @@ const IniciarSesion = () => {
             const data = await resp.json()
             console.log(data);
             
-            window.location.href="/"
+            window.location.href="/Home"
     };
 
     return(
