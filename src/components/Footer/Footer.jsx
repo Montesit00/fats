@@ -2,69 +2,25 @@ import React from "react";
 
 const Footer = () =>{
    return (
+    <div className="container-footer">	
+
         <footer>
-            <div className="containter-footer-all">
-
-                <div className="container-body">
-                    <div className="colum1">
-                        <h1>Mas informacion sobre el proyecto</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, 
-                            adipisicing elit. Dolorem perferendis pariatur dolores, modi ducimus amet?</p>
-                    </div>
-                    <div className="colum2">
-                        <h1>Redes Sociales</h1>
-                            <div className="row">
-                                <i className="fa-brands fa-facebook"></i>
-                                <label>Siguenos en Facebook</label>
-                            </div>
-                            <div className="row">
-                                <i className="fa-brands fa-instagram"></i>
-                                <label>Siguenos en Instagram</label>
-                            </div>
-                    </div>
-                    <div className="colum3">
-                        <h1>Información Contactos</h1>
-                            <div className="row2">
-                                <img src=""></img>
-                                <label> 
-                                    Plaza San Martin,
-                                    Republica Argentina
-                                    Formosa Capital
-                                </label>
-                            </div>
-                            <div className="row2">
-                                <img src=""></img>
-                                <label> 
-                                    +543704959493                               
-                                </label>
-                            </div>
-                            <div className="row2">
-                                <img src=""></img>
-                                <label> 
-                                    CursosYaFormosa@gmail.com
-                                </label>
-                            </div>
-                    </div>
-                </div>
-
-                <div className="container-footer">
-                    <div className="footer">
-                        <div className="copyright">
-                            2022 Todos los derechos reservados para <a>CursosYa</a>
-                        </div>
-
-                        <div className="informacion">
-                            <a href="#">Información Compañia</a>
-                                | 
-                            <a href="#">Privacion y Política </a> 
-                                | 
-                            <a href="#">Terminos y Condiciones</a>
-                        </div>
-                    </div>
-                </div>
-
+            <div className="logo-footer">
+                <img src="img/logo-magtimus-pro-.png" alt=""/>
             </div>
+
+            <div className="redes-footer">
+                <a href="#"><i className="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i className="fab fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="#"><i className="fab fa-instagram icon-redes-footer"></i></a>
+            </div>
+
+            <hr/>
+            <h4>© 2020 CursosYA! - Todos los Derechos Reservados</h4>
+
         </footer>
+
+    </div>
     )
 }
 

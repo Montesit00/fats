@@ -1,126 +1,72 @@
 /*Footer*/
 
-footer{
-    margin: 0px;
-    padding: 40px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    background-color: #202020;
-    color: white;
-    width: 100%;
-}
-
-.containter-footer-all{
-    width: 100%;
-    max-width: 1600px;
-    margin: auto;
-}
-
-.container-body{
-    display: flex;
-    justify-content: space-between;
-}
-.colum1{
-    max-width: 400px;
-}
-.colum1 h1{
-    font-size: 22px;
-}
-
-.colum1 p{
-    font-size: 14px;
-    color: #c7c7c7;
-    margin-top: 20px;
-}
-
-.colum2{
-    max-width: 400px;
-}
-
-.colum2 h1{
-    font-size: 22px;
-}
-
-.colum2 .row {
-    margin-top: 20px;
-    display: flex;
-}
-
-.row img {
-    width: 36px;
-    height: 36px;
-}
-
-.row label {
-    margin-top: 10px;
-    margin-left: 10px;
-    color: #C7C7C7;
-}
-
-.colum3{
-    max-width: 400px;
-}
-
-.colum3 h1{
-    font-size: 22px;
-}
-
-.row2 {
-    margin-top: 20px;
-    display: flex;
-}
-
-.row2 img{
-    width: 36px;
-    height: 36px;
-}
-
-.row2 label{
-    margin-top: 10px;
-    margin-left: 20px;
-    max-width: 140px;
-}
-
 .container-footer{
     width: 100%;
-    background:#101010;
+    padding: 40px 0;
+    background: rgb(46, 44, 44);
+    margin-top: 40px;
 }
 
-.footer{
-    display: flex;
-    justify-content: space-between;
+.container-footer footer{
     max-width: 1200px;
-    padding: 40px;
     margin: auto;
 }
 
-.copyright{
-    color: #C7C7C7;
+.container-footer footer .logo-footer{
+    text-align: center;
 }
 
-.copyright a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+.container-footer footer .logo-footer img{
+    width: 100px;
 }
 
-.information a{
-    text-decoration: none;
-    color: #C7C7C7;
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-@media screen and (max-width:1100px){
-    
-    .container-body{
-        flex-wrap: wrap;
-    }
 
-    .colum1{
-        max-width: 100%;
-    }
-
-    .colum2,
-    .colum3{
-        margin-top: 40px;   
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
 }
+
+footer .redes-footer .fa-facebook-f:hover{
+    background: #41579A;
+    color: #fff;
+}
+
+footer .redes-footer .fa-google-plus-g:hover{
+    background: #DE4C34;
+    color: #fff;
+}
+
+footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+    color: #fff;
+}
+
+
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #c0c0c07a;
+}
+
+
+.container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500;
 }

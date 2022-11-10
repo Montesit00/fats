@@ -46,7 +46,7 @@ const Registro = () => {
             const data = await resp.json()
             console.log(data);
 
-            window.location.href="/"
+            window.location.href="/IniciarSesion"
     }
 
     return(
