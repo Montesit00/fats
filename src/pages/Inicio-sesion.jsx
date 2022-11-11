@@ -37,6 +37,8 @@ const IniciarSesion = () => {
             const data = await resp.json()
             console.log(data);
             
+            localStorage.setItem("token",JSON.stringify(data))
+
             window.location.href="/Home"
     };
 
