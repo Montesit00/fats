@@ -46,7 +46,7 @@ const Registro = () => {
             const data = await resp.json()
             console.log(data);
 
-            window.location.href="/IniciarSesion"
+            window.location.href="/Home"
     }
 
     return(
@@ -90,7 +90,7 @@ const Registro = () => {
                                         autoFocus={true}
                                     />
                                 </div>
-                                <button type="submit" className='btn btn-sm btn-primary mt-4'>Regístro</button>
+                                <button type="submit" className='btn btn-sm btn-dark mt-4'>Regístro</button>
                             </div>
                         </form>
                     </div>

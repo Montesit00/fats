@@ -52,7 +52,7 @@ header{
 .btnHeaderRegister{
     padding: 7px 15px;
     border: none;
-    background: #272727;
+    background:#1a2537;
     color: white;
     font-weight: 500;
     font-size:  16px;
@@ -61,7 +61,7 @@ header{
 }
 
 .btnHeaderRegister:hover{
-    background: #000;
+    background: rgb(4, 0, 35);
     color: white,
 }
 

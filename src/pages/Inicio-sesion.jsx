@@ -71,7 +71,7 @@ const IniciarSesion = () => {
                                         value={password}
                                     />
                                 </div>
-                                <button type="submit" className='btn btn-sm btn-primary mt-4'>Regístro</button>
+                                <button type="submit" className='btn btn-sm btn-dark mt-4'>Regístro</button>
                             </div>
                         </form>
                     </div>

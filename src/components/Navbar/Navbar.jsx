@@ -9,12 +9,12 @@ const Navbar = () => {
                     <div className="log">
                         <img src="" alt=""></img>
                     </div>
-                    <div className="button-buscar">
+                    {/* <div className="button-buscar">
                                     <input type="text" placeholder="Buscar" required/>
                                         <div className="btn-buscar">
                                             <i className="fas fa-search icon"></i>
                                         </div>
-                                </div>
+                                </div> */}
                     <div className="menu">
                         <nav>
                             <ul>

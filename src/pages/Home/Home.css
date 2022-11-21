@@ -14,7 +14,7 @@
     height: 500px;
     position: relative;
     margin-top: 80px;
-    background-image: url(/public/galeria/HomeIMG.jpg);
+    background-image: url(/galeria/HomeIMG.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

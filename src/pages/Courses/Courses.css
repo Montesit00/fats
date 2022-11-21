@@ -1,0 +1,30 @@
+.card{
+    width: 18rem;
+}
+  
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+.form-input{
+    padding: 2rem;
+  }
+.resultados{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    height: auto;
+    width: 500px;
+    align-items: center;
+  }
+.NoRes{
+    justify-self: center;
+  }
