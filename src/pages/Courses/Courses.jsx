@@ -31,11 +31,20 @@ function Courses() {
     <>
         <Navbar/>
             <div className="">
+                <div className='form-center'>
+                    <form className="" onSubmit={datos}>
+                        
+                        <div className="search__container">
+        
+                            <p className="search__title">
+                                Encuentra lo que necesitas
+                            </p>
+                            <input className="search__input" type="text" placeholder="Busca tus cursos" onChange={cambiarState} />
             
-                <form className="form-input" onSubmit={datos}>
-                    <input type="text" placeholder="Busca tus cursos" onChange={cambiarState} />
-                    <button type="submit" className='btn btn-sm btn-dark'>Buscar</button>
-                </form>
+                        </div>
+
+                    </form>
+                </div>
 
                 <div className="resultados">
                         {pelis.length === 0 ? 

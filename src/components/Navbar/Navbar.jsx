@@ -7,22 +7,15 @@ const Navbar = () => {
         <header>
                 <div className="containerHeader">
                     <div className="log">
-                        <img src="" alt=""></img>
+                        
+                        <Link to="/"><img src="galeria/logoIpf.png"></img></Link>
                     </div>
-                    {/* <div className="button-buscar">
-                                    <input type="text" placeholder="Buscar" required/>
-                                        <div className="btn-buscar">
-                                            <i className="fas fa-search icon"></i>
-                                        </div>
-                                </div> */}
+
                     <div className="menu">
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="#">Categorias</a>
-                                </li>
-                                <li>
-                                    <a href="#">Undefined</a>
+                                    <Link to="/Cursos">Cursos</Link>
                                 </li>
                                 <li>
                                     <a href="#">Enseñe en CursosYa!</a>

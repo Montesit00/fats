@@ -9,7 +9,7 @@ const VistaCursos = (props) => {
                 <div className="card-body">
                     <h5 className="card-title">{nombre}</h5>
                     <p className="card-text">{anio}</p>
-                    <p href="#" className="btn btn-primary">Go somewhere</p>
+                    <p href="#" className="btn btn-primary">Aprender</p>
                 </div>
             </div>  
         </Link>

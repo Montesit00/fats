@@ -3,7 +3,9 @@ import { useState } from "react";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 
-const IniciarSesion = () => {
+const IniciarSesion = (param) => {
+
+    /*const [ passwordError, SetPasswordError ] = useState(false);*/
     
     const options = {
         method: 'POST',
@@ -23,7 +25,13 @@ const IniciarSesion = () => {
         setUsuarios({
             ...usuarios,
             [target.name]:target.value
-        })
+        }) 
+           /* if ( [target.password].target.value < 6 ) {
+                SetPasswordError(true); 
+            } else {
+                SetPasswordError(false);
+                setUsuarios.password(value)
+            }*/
     };
 
     const guardarDatos = async (e) => {
@@ -39,7 +47,7 @@ const IniciarSesion = () => {
             
             localStorage.setItem("token",JSON.stringify(data))
 
-            window.location.href="/Home"
+            window.location.href="/Cursos"
     };
 
     return(
@@ -50,7 +58,7 @@ const IniciarSesion = () => {
                         <form className="border p-4 rounded bg-white" onSubmit={guardarDatos}>
                             <div className="container">
                                 <h3>Inicia Sesion</h3>
-                                <div className="inputContainer">
+                                <div className="inputContainer" >
                                     <input 
                                         type="text" 
                                         name="email" 
@@ -59,9 +67,10 @@ const IniciarSesion = () => {
                                         onChange= {valorInput}
                                         value={email}
                                         autoFocus={true}
+                                       /* param={SetPasswordError} */
                                     />
                                 </div>
-                                <div className="inputContainer">
+                                <div className=/*param ? 'input-error' : */"inputContainer">
                                     <input 
                                         type="password" 
                                         name="password" 
@@ -70,8 +79,13 @@ const IniciarSesion = () => {
                                         onChange={valorInput}
                                         value={password}
                                     />
+                                     { /*  { passwordError && 
+                                            <label className="label-error">
+                                                Verifique la contraseña
+                                            </label>
+                                        } */}
                                 </div>
-                                <button type="submit" className='btn btn-sm btn-dark mt-4'>Regístro</button>
+                                <button type="submit" className='btn btn-sm btn-dark mt-4'>Iniciar</button>
                             </div>
                         </form>
                     </div>

@@ -46,7 +46,7 @@ const Registro = () => {
             const data = await resp.json()
             console.log(data);
 
-            window.location.href="/Home"
+            window.location.href="/iniciosesion"
     }
 
     return(
@@ -94,7 +94,7 @@ const Registro = () => {
                             </div>
                         </form>
                     </div>
-                </div> 
+                </div>
         <Footer/>
     </>
     )
