@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar"
 
 const Registro = () => {
 
@@ -46,7 +46,7 @@ const Registro = () => {
             const data = await resp.json()
             console.log(data);
 
-            window.location.href="/iniciosesion"
+            window.location.href="/IniciarSesion"
     }
 
     return(

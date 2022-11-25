@@ -6,7 +6,7 @@ import Navbar from '../../components/Navbar/Navbar'
 
 function Home() {
     
-    document.getElementById("move-content").classList.toggle('move-container-all');
+    
 
   return (
     <>

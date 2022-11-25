@@ -1,8 +1,21 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 
 import { Link } from "react-router-dom";
+import { ButtonCerrarSesion } from "../assets/BottonCerrarSesion";
+import { ButtonLogin } from "../assets/BottonLogin";
+import { ButtonRegister } from "../assets/BottonRegistro";
 
 const Navbar = () => {
+
+    const [Login, setLogin] = useState(null);
+
+     useEffect(() => {
+        const usuarioT = localStorage.getItem('loggedUser')
+        if (usuarioT){
+                const user = JSON.parse(usuarioT)
+                setLogin(user)
+            }
+        }, [])
     return(
         <header>
                 <div className="containerHeader">
@@ -28,11 +41,18 @@ const Navbar = () => {
                     </div>
                     
                     <div className="headerRegister">
-
-                        <Link type="button" value="Iniciar Sesion" className="btnHeaderLogin" to="/IniciarSesion">IniciarSesión</Link>
-                        <Link type="button" value="Registrarse" className="btnHeaderRegister" to="/Registro">Regístrate</Link>
-
+                        
+                        {Login 
+                            ?  
+                                <ButtonCerrarSesion/>    
+                            : 
+                                <>
+                                <ButtonLogin/>
+                                <ButtonRegister/>
+                                </> 
+                        } 
                     </div>
+
                 </div>
         </header>
     )

@@ -12,13 +12,4 @@
 
 @import url('../src/pages/Courses/Courses.css');
 
-/*Inico Sesion error*/
-
-.input-error {
-    border: 1px solid red;
-    color: red;
-    background-color: rosybrown;
-}
-
-
-
+@import url('../src/pages/Register-Login/Login.css');

@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 export const BuscarID = () => {
     const { id } = useParams();
     
-    const [detPels, setdetPels] = useState({})
+    const [datPels, setdetPels] = useState({})
     const datos= () =>{
         fetch(`http://www.omdbapi.com/?apikey=67a6157f&i=${id}`)
         .then(response => response.json())
@@ -16,7 +16,7 @@ export const BuscarID = () => {
         useEffect(() => {
             datos()
     }, )
-        const {Actors,Country,Title,Poster,Director,Plot,Runtime}= detPels
+        const {Actors,Country,Title,Poster,Director,Plot,Runtime}= datPels
             return (
                 <div>
                     <div>

@@ -2,8 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route }  from "react-router-dom";
 
 import Mainbody from '../components/MainBody/Mainbody';
-import Registro from "../pages/Registro";
-import InicioSesion from '../pages/Inicio-sesion';
+import Registro from "../pages/Register-Login/Registro";
+import InicioSesion from '../pages/Register-Login/Inicio-sesion';
 import Home from '../pages/Home/Home'
 import Courses from '../pages/Courses/Courses';
 import { BuscarID } from '../components/BuscarID';
